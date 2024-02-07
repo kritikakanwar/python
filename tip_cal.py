@@ -1,5 +1,5 @@
 #tip calculator
-#Using f string 
+#Using f string and round
 #1
 print("Welcome to tip calculator\n")
 bill=float(input("what was the total bill ?"))
@@ -10,7 +10,8 @@ if tip in (10,12,15):
     a=(bill*(tip/100))/total_persons
     print(a)
     per_person_amount=(bill/total_persons)+a
-    print(f"Each person should pay :{per_person_amount}")
+    total_amount_per_person=round(per_person_amount,2)
+    print(f"Each person should pay :{total_amount_per_person}")
 else:
     print("Select Standard Tip percentage 10,12 or 15")
     
@@ -26,10 +27,10 @@ if tip in (10,12,15):
     tip_calculation=float(bill*(tip/100))
     total_bill=bill+tip_calculation
     per_Person_Amt=total_bill/total_persons
-    print(f"Each person should pay :{per_Person_Amt}")
+    total_amount_per_person=round(per_Person_Amt,2)
+    print(f"Each person should pay :{total_amount_per_person}")
 else:
     print("Select Standard Tip percentage 10,12 or 15")
-
 
 
 
