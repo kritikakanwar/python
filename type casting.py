@@ -23,6 +23,9 @@ print(3*3+3/3-3)
 #Precedence of operators is from left to right .Here multplication comes first before division. so mulplication is performed first.
 
 print(6/3-3*3+3)
-o/p=-4
+o/p=-4.0
 #likewise, In this subtration got higher precedance than addition.
+
+print(6+4/2-(1*2))
+o/p=6.0
 
