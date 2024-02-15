@@ -1,3 +1,4 @@
+#I am still working on this mini project...
 import random
 
 word_list=['welcome','kantara','avatar']
